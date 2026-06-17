@@ -1,0 +1,117 @@
+/* ==========================================================================
+   SENIOR ENHANCED INDUSTRIAL NAVBAR ARCHITECTURE
+   ========================================================================== */
+
+/* Anti-Flicker Hardware accelerated wrappers */
+.wt-header-wrapper {
+  will-change: transform;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.04) !important;
+  z-index: 1050;
+}
+
+/* Premium Light Gray Accent Background for Main Utility Bar */
+.wt-primary-header {
+  background-color: #fcfcfd !important;
+  border-color: #f1f1f5 !important;
+}
+
+/* Core Navigation Items */
+.wt-main-nav__link {
+  font-size: 0.94rem;
+  font-weight: 500;
+  color: #495057;
+  padding: 6px 0;
+  position: relative;
+  transition: color 0.22s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.wt-main-nav__link:hover {
+  color: #dc3545;
+}
+
+/* Smooth active state boundary indicator */
+.wt-nav__link--active {
+  color: #dc3545 !important;
+  font-weight: 600;
+}
+
+.wt-nav__link--active::after {
+  content: "";
+  position: absolute;
+  bottom: -11px; /* Align perfect layout pixel bounds on screen */
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background-color: #dc3545;
+  border-radius: 4px 4px 0 0;
+}
+
+/* Secondary Component Nav Configuration */
+.wt-sub-header {
+  background-color: #ffffff !important;
+  border-color: #f1f1f5 !important;
+}
+
+.wt-sub-nav__link {
+  font-size: 0.88rem;
+  color: #5a626a;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.wt-sub-nav__link:hover {
+  color: #dc3545;
+}
+
+/* Alert/Live Flag Action */
+.wt-sub-nav__link--alert {
+  color: #dc3545;
+  position: relative;
+}
+.wt-sub-nav__link--alert:hover {
+  opacity: 0.85;
+}
+
+/* Perfectly Balanced Soft Decorative Indicators */
+.wt-indicator-dot {
+  width: 6.5px;
+  height: 6.5px;
+  background-color: #f48fb1;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+/* High-Grade Modern Drops UI */
+.wt-dropdown-panel {
+  border-radius: 12px !important;
+  padding: 8px !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.07) !important;
+  animation: wtDropdownFade 0.22s ease-out;
+}
+
+.wt-dropdown__item {
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background-color 0.15s ease;
+}
+
+.wt-dropdown__item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Premium micro-interactions */
+.wt-btn-primary, .wt-btn-focus-area {
+  transition: opacity 0.2s ease, transform 0.15s ease !important;
+}
+.wt-btn-primary:active, .wt-btn-focus-area:active {
+  transform: scale(0.97) !important;
+}
+
+@keyframes wtDropdownFade {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}

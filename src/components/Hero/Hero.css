@@ -1,0 +1,64 @@
+/* Main Hero Background Gradient */
+.hero-banner {
+  background: linear-gradient(135deg, #422006 0%, #78350f 50%, #422006 100%);
+  border-radius: 0 0 24px 24px;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.announcement-badge {
+  font-size: 0.85rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.hero-title {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+}
+
+
+.feature-item {
+  font-size: 1.1rem;
+}
+
+.check-icon {
+  background-color: #22c55e; 
+  color: white;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.cta-box {
+  min-width: 280px;
+  border: 2px solid #ea580c; 
+}
+
+.cta-badge {
+  background-color: #ffedd5;
+  color: #ea580c;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.cta-price {
+  font-size: 2.2rem;
+  color: #111827;
+}

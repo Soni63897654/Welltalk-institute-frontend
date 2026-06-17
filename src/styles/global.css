@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #ffffff; /* मुख्य थीम के अनुसार सफ़ेद बैकग्राउंड */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* नेवबार - Red & White थीम के अनुसार सफ़ेद बैकग्राउंड और लाइट बॉर्डर */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dc354515;
+}
+
+/* लोगो टेक्स्ट */
+.logo {
+  color: #dc3545; /* रेड लोगो */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #495057;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #dc3545;
+}
+
+/* हीरो सेक्शन */
+.hero-section {
+  height: 500px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-slide {
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-overlay h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.hero-overlay p {
+  font-size: 18px;
+  max-width: 600px;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* नेविगेशन लिंक आइटम्स */
+.nav-link-item {
+  color: #495057;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+  position: relative;
+  padding: 6px 0;
+}
+
+.nav-link-item:hover, 
+.nav-link-item.active-nav-link {
+  color: #dc3545 !important;
+}
+
+/* एक्टिव लिंक के नीचे सुंदर लाइन इफ़ेक्ट */
+.nav-link-item.active-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #dc3545;
+  border-radius: 2px;
+}
+
+/* ड्रॉपडाउन आइटम होवर - लाइट रेड बैकग्राउंड */
+.dropdown-item:hover {
+  background-color: #dc354510 !important; /* पर्पल हटाकर लाइट रेड किया */
+  color: #dc3545 !important;
+}
+
+/* कोर्सेज बटन होवर - सॉलिड रेड बैकग्राउंड */
+.courses-btn:hover {
+  background-color: #dc3545 !important;
+  color: #ffffff !important; /* #white सिंटैक्स एरर को फिक्स किया */
+}
