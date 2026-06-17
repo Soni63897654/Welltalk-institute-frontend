@@ -1,7 +1,11 @@
 {
-  "name": "chat-bot",
+  "name": "welltalk",
   "version": "0.1.0",
   "private": true,
+  "eslintConfig": {
+    "extends": ["react-app"],
+    "ignoreDuringBuilds": true
+  },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "@testing-library/dom": "^10.4.1",
