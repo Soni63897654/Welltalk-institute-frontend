@@ -65,7 +65,7 @@ export function AuthProvider({ children }) {
     } else {
       setLoading(false);
     }
-  }, []);
+  }, [token, getProfile]);
 
   return (
     <AuthContext.Provider
